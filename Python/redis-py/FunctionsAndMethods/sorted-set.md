@@ -374,5 +374,5 @@ r.zcount            r.zlexcount         r.zrangebyscore     r.zremrangebylex    
 
 [1] redis-py@Github, [redis-py](https://github.com/andymccurdy/redis-py/blob/master/redis/client.py)
 
-[2] redis-py@ReadTheDocs, [redis-py’s documentation](https://redis-py.readthedocs.io/en/latest/)
+[2] redis-py@ReadTheDocs, [redis-py’s documentation](https://redis-py2.readthedocs.io/en/latest/)
 
