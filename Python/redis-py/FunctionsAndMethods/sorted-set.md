@@ -7,6 +7,8 @@ r.zcard             r.zinterstore       r.zrangebylex       r.zrem              
 r.zcount            r.zlexcount         r.zrangebyscore     r.zremrangebylex    r.zrevrange         r.zscan             r.zunionstore
 ```
 
+* *Tips: ``score`` from Redis will be ``float`` even though set ``int``*
+
 ## Insert
 
 * Add Element Into Sorted Set
