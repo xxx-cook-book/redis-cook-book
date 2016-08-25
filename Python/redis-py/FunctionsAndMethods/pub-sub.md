@@ -54,7 +54,21 @@ pubsub.encoding                   pubsub.run_in_thread
 pubsub.encoding_errors            pubsub.shard_hint
 pubsub.execute_command            pubsub.subscribe
 pubsub.get_message                pubsub.subscribed
-pubsub.handle_message             pubsub.unsubscribe​
+pubsub.handle_message             pubsub.unsubscribe
 ```
 
+* ``get_message`` will get a ``'type': 'subscribe'`` message after subscribe
+
+## ``get_message()`` vs. ``listen()`` vs. ``callback``
+
+ ## Principle
+
+Redis does not queue anything on pub/sub channels. On the contrary, it tends to read the item from the publisher socket, and write the item in all the subscriber sockets, ideally in the same iteration of the event loop. Nothing is kept in Redis data structures. [More.](http://stackoverflow.com/questions/27745842/redis-pubsub-and-message-queueing)
+
 ## References
+
+[1] redis-py@Github, [redis-py](https://github.com/andymccurdy/redis-py/blob/master/redis/client.py)
+
+[2] redis-py@ReadTheDocs, [redis-py’s documentation](https://redis-py2.readthedocs.io/en/latest/)
+
+[3] Marco Benvoglio@StackOverflow, [Redis Pubsub and Message Queueing](http://stackoverflow.com/questions/27745842/redis-pubsub-and-message-queueing)

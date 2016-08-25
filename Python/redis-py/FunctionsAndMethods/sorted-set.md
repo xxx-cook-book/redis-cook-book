@@ -8,6 +8,7 @@ r.zcount            r.zlexcount         r.zrangebyscore     r.zremrangebylex    
 ```
 
 * *Tips: ``score`` from Redis will be ``float`` even though set ``int``*
+* *Tips: Descending lexicographical order is used for elements with equal score.*
 
 ## Insert
 
@@ -360,6 +361,22 @@ r.zcount            r.zlexcount         r.zrangebyscore     r.zremrangebylex    
 
   Union multiple sorted sets specified by `keys` into a new sorted set, `dest`. Scores in the destination will be aggregated based on the `aggregate`, or SUM if none is provided.
 
+## Param
+
+* score_cast_func
+
+  ```python
+  In [10]: def score_cast_func(score):
+     ...:     return int(score) ** 2
+     ...:
+
+  In [11]: r.zrange('sorted_set', 0, 100, desc=True, withscores=True)
+  Out[11]: [('d', 4.0), ('c', 3.0), ('b', 2.0), ('a', 1.0)]
+
+  In [12]: r.zrange('sorted_set', 0, 100, desc=True, withscores=True, score_cast_func=score_cast_func)
+  Out[12]: [('d', 16), ('c', 9), ('b', 4), ('a', 1)]
+  ```
+
 ## Usage
 
 * Select Top N
@@ -370,6 +387,8 @@ r.zcount            r.zlexcount         r.zrangebyscore     r.zremrangebylex    
 
   In [56]: r.zrevrange('sorted_set', 0, 100, withscores=True)
   Out[56]: [('d', 4.0), ('c', 3.0), ('b', 2.0), ('a', 1.0)]
+      
+  # In [56]: r.zrevrange('sorted_set', 0, N-1, withscores=True)
   ```
 
 ## References

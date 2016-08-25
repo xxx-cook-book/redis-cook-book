@@ -17,3 +17,8 @@
       * Queue
       * [Pub/Sub](Python/redis-py/FunctionsAndMethods/pub-sub.md)
     * [Magic Usages In Action](Python/redis-py/magic-usages-in-action.md)
+      * [String](Python/redis-py/MagicUsagesInAction/string.md)
+      * [List](Python/redis-py/MagicUsagesInAction/list.md)
+      * [Sorted Set](Python/redis-py/MagicUsagesInAction/sorted-set.md)
+    * [Codec](Codec/README.md)
+      * [``Utf8`` vs. ``Unicode``](Codec/utf8-vs-unicode.md)
