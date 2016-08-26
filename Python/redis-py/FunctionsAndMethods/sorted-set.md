@@ -391,6 +391,23 @@ r.zcount            r.zlexcount         r.zrangebyscore     r.zremrangebylex    
   # In [56]: r.zrevrange('sorted_set', 0, N-1, withscores=True)
   ```
 
+* Sorted By Timestamp When Score Equals
+
+  * Solution1 — Score Transform
+
+    * [Magic Usages In Action — Sorted Set](https://xxx-cook-book.gitbooks.io/redis-cook-book/content/Python/redis-py/MagicUsagesInAction/sorted-set.html)
+
+  * Solution2 — zinterstore
+
+    * *If what you want is not just sorted by timestamp, this solution is perfect*
+    * [Liu Wei@Redis DB@GoogleGroups — redis sorted set order by multi scores](https://groups.google.com/forum/#!topic/redis-db/-Kzt-Fr35zk)
+    * [Blog@dr-josiah — Multi-column (SQL-like) sorting in Redis](http://www.dr-josiah.com/2013/10/multi-column-sql-like-sorting-in-redis.html)
+    * [josiahcarlson/sort_zset_cols.py — A method to get sql-like multiple-column order by in Redis](https://gist.github.com/josiahcarlson/7126873)
+
+  * Solution3 — Name Transform
+
+    * [Bruce Dou@Stackoverflow — Redis: Is it possible sort ordered set result with same score by other key value](http://stackoverflow.com/questions/10410655/redis-is-it-possible-sort-ordered-set-result-with-same-score-by-other-key-value)
+
 ## References
 
 [1] redis-py@Github, [redis-py](https://github.com/andymccurdy/redis-py/blob/master/redis/client.py)

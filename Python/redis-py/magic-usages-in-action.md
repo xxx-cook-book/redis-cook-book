@@ -14,6 +14,7 @@
 ## Sorted Set
 
 * Delayed Tasks
+* Sorted By Timestamp When Score Equals
 
 ## References
 
