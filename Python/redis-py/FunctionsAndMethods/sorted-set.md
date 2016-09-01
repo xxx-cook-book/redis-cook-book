@@ -37,7 +37,7 @@ r.zcount            r.zlexcount         r.zrangebyscore     r.zremrangebylex    
   Out[54]: [('a', 1.0), ('b', 2.0), ('c', 3.0), ('d', 4.0)]
   ```
 
-  Tips: Some Redis Version, Can Just Add One Element One Time
+  *Tips: Some Redis Version, Can Just Add One Element One Time*
 
 ## Select
 

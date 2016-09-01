@@ -1,4 +1,4 @@
-# Functions and Methods
+# Functions & Methods
 
 ## String
 
