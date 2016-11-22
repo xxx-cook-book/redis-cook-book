@@ -5,6 +5,8 @@
   * [Performance](Redis/Performance/README.md)
 * [Python](Python/README.md)
   * [redis-py](Python/redis-py/README.md)
+    * [Codec](Python/redis-py/Codec/README.md)
+      * [``Utf8`` vs. ``Unicode``](Python/redis-py/Codec/utf8-vs-unicode.md)
     * [Functions & Methods](Python/redis-py/FunctionsAndMethods/README.md)
       * String
       * List
@@ -22,5 +24,8 @@
       * [List](Python/redis-py/MagicUsagesInAction/list.md)
       * [Sorted Set](Python/redis-py/MagicUsagesInAction/sorted-set.md)
     * [StrictRedis Extensions](Python/redis-py/StrictRedisExtensions/README.md)
-    * [Codec](Python/redis-py/Codec/README.md)
-      * [``Utf8`` vs. ``Unicode``](Python/redis-py/Codec/utf8-vs-unicode.md)
+    * [Transaction](Python/redis-py/Transaction/README.md)
+      * Lock
+      * Multi
+      * [Pipeline](Python/redis-py/Transaction/Pipeline.md)
+      * Watch
