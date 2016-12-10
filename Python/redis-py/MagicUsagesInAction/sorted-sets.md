@@ -1,4 +1,4 @@
-# Sorted Set
+# Sorted Sets
 
 ## Delayed Tasks
 

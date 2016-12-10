@@ -1,4 +1,4 @@
-# String
+# Strings
 
 ## Atomic Get & Delete
 

@@ -8,21 +8,30 @@
     * [Codec](Python/redis-py/Codec/README.md)
       * [``Utf8`` vs. ``Unicode``](Python/redis-py/Codec/utf8-vs-unicode.md)
     * [Functions & Methods](Python/redis-py/FunctionsAndMethods/README.md)
-      * String
-      * List
-      * Hash(Dict)
-      * Set
-      * [Sorted Set](Python/redis-py/FunctionsAndMethods/sorted-set.md)
-      * Filter
+      * Cluster
+      * Connection
+      * Geo
+      * Keys
+      * Lists
+      * Hashes
+      * HyperLogLog
+      * [Pub/Sub](Python/redis-py/FunctionsAndMethods/pub-sub.md)
+      * Scripting
+      * Server
+      * Sets
+      * [Sorted Sets](Python/redis-py/FunctionsAndMethods/sorted-sets.md)
+      * Strings
+      * Transactions
+      * ​
+      * Counter
       * Delete
       * Expire
-      * Counter
+      * Filter
       * Queue
-      * [Pub/Sub](Python/redis-py/FunctionsAndMethods/pub-sub.md)
     * [Magic Usages In Action](Python/redis-py/MagicUsagesInAction/README.md)
-      * [String](Python/redis-py/MagicUsagesInAction/string.md)
-      * [List](Python/redis-py/MagicUsagesInAction/list.md)
-      * [Sorted Set](Python/redis-py/MagicUsagesInAction/sorted-set.md)
+      * [Lists](Python/redis-py/MagicUsagesInAction/lists.md)
+      * [Sorted Sets](Python/redis-py/MagicUsagesInAction/sorted-sets.md)
+      * [Strings](Python/redis-py/MagicUsagesInAction/strings.md)
     * [StrictRedis Extensions](Python/redis-py/StrictRedisExtensions/README.md)
     * [Transaction](Python/redis-py/Transaction/README.md)
       * Lock
