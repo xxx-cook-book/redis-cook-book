@@ -1,6 +1,6 @@
 # Strings
 
-## Atomic Get & Delete
+## Get & Delete
 
 ```python
 def get_delete(conn, key):
@@ -10,7 +10,7 @@ def get_delete(conn, key):
     return pipe.execute()
 ```
 
-## Atomic Get & Rename
+## Get & Rename
 
 ```python
 def get_rename(conn, key, suffix='del'):

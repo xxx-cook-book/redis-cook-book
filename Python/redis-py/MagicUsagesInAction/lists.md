@@ -1,6 +1,6 @@
 # Lists
 
-## Atomic Multi Pop
+## Multi Pop
 
 ```python
 def multi_pop(conn, key, num):
