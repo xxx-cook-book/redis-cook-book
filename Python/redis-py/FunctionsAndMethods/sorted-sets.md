@@ -382,10 +382,11 @@ r.zcount            r.zlexcount         r.zrangebyscore     r.zremrangebylex    
 * Select Top N
 
   ```python
-  In [55]: r.zrange('sorted_set', 0, 100, desc=True, withscores=True)
+  # TOP 100
+  In [55]: r.zrange('sorted_set', 0, 100-1, desc=True, withscores=True)
   Out[55]: [('d', 4.0), ('c', 3.0), ('b', 2.0), ('a', 1.0)]
 
-  In [56]: r.zrevrange('sorted_set', 0, 100, withscores=True)
+  In [56]: r.zrevrange('sorted_set', 0, 100-1, withscores=True)
   Out[56]: [('d', 4.0), ('c', 3.0), ('b', 2.0), ('a', 1.0)]
       
   # In [56]: r.zrevrange('sorted_set', 0, N-1, withscores=True)
