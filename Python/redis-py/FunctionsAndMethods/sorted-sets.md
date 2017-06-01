@@ -396,7 +396,7 @@ r.zcount            r.zlexcount         r.zrangebyscore     r.zremrangebylex    
 
   * Solution1 — Score Transform
 
-    * [Magic Usages In Action — Sorted Set](https://xxx-cook-book.gitbooks.io/redis-cook-book/content/Python/redis-py/MagicUsagesInAction/sorted-set.html)
+    * [Magic Usages In Action — Sorted Set](https://xxx-cook-book.gitbooks.io/redis-cook-book/content/Python/redis-py/MagicUsagesInAction/sorted-sets.html)
 
   * Solution2 — zinterstore
 
