@@ -407,7 +407,7 @@ r.zcount            r.zlexcount         r.zrangebyscore     r.zremrangebylex    
 
   * Solution3 — Name Transform
 
-    * [Bruce Dou@Stackoverflow — Redis: Is it possible sort ordered set result with same score by other key value](http://stackoverflow.com/questions/10410655/redis-is-it-possible-sort-ordered-set-result-with-same-score-by-other-key-value)
+    * [Bruce Dou@StackOverflow — Redis: Is it possible sort ordered set result with same score by other key value](http://stackoverflow.com/questions/10410655/redis-is-it-possible-sort-ordered-set-result-with-same-score-by-other-key-value)
 
 ## References
 
